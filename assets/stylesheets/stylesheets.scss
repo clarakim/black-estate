@@ -1,0 +1,211 @@
+@import "normalize";
+@import "foundation";
+
+$my-backgound-color: #000000;
+$my-color: #FFFFFF;
+$my-second-color: #757575;
+$my-page-width:1200px;
+$my-width:960px;
+
+$row-width: rem-calc(1200px);
+$column-gutter: rem-calc(30);
+$total-columns: 12 ;
+
+
+
+
+body
+{
+	
+	min-width: my-page-width;
+	min-width: $my-width;
+	margin: 0 auto;
+	background-color: $my-backgound-color
+	
+}
+
+
+#gradient {
+position: fixed;
+height:1000px;
+width: 100%;
+
+
+
+background: rgb(0,0,0); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzMxMzE0MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iIzM1MzU0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzI1MjYzMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxOTFhMjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(49,49,64,1) 50%, rgba(53,53,68,1) 63%, rgba(37,38,48,1) 80%, rgba(25,26,33,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(49,49,64,1)), color-stop(63%,rgba(53,53,68,1)), color-stop(80%,rgba(37,38,48,1)), color-stop(100%,rgba(25,26,33,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(49,49,64,1) 50%,rgba(53,53,68,1) 63%,rgba(37,38,48,1) 80%,rgba(25,26,33,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(49,49,64,1) 50%,rgba(53,53,68,1) 63%,rgba(37,38,48,1) 80%,rgba(25,26,33,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(49,49,64,1) 50%,rgba(53,53,68,1) 63%,rgba(37,38,48,1) 80%,rgba(25,26,33,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(49,49,64,1) 50%,rgba(53,53,68,1) 63%,rgba(37,38,48,1) 80%,rgba(25,26,33,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#191a21',GradientType=0 ); /* IE6-8 */
+}
+
+
+
+	
+
+
+textarea {height:auto;
+	min-height: 50px;
+	}
+
+
+h1,{
+	color: $my-color;
+	font-family: Maven Pro, sans-serif;
+	text-decoration: underline;}
+
+h2,h3 {color: $my-second-color;}
+
+#text-right{color: $my-second-color;
+		text-align: right;}
+
+
+
+li {font-family: 'Gafata', sans-serif;}
+
+a:link {color:$my-second-color;}
+a:visited {color:$my-second-color;}
+a:hover {background-color: $my-color;
+		color:$my-backgound-color;}
+
+
+h1
+{
+font-size: 18pt;
+}
+
+p{
+ font-family:'Maven Pro', sans-serif;
+	color: $my-second-color;}
+
+h2
+{
+ font-size: 16pt;
+ text-decoration: italic;
+}
+
+h3
+{
+ font-size: 14pt;
+ color: #9B9B8C;
+}
+
+li{
+	list-style-type: none;
+	color: $my-second-color;
+}
+
+
+#logo{ 
+	margin-bottom: 0px;
+	background-size: 150%
+
+
+}
+
+.container{
+	min-width: $my-page-width;
+	margin: 0 auto;
+	
+	
+	}
+
+.row {
+	
+}
+
+.heading {
+	height: 213px;
+	padding-top: 50px;
+}
+
+
+
+
+.text-right {color: $my-color;}
+
+
+
+
+.navbar {
+	position: relative;
+	
+	padding: 15px auto;
+	width: $my-width;
+	border-style: solid;
+	border-width: 1px;
+	border-color:$my-second-color;
+	margin: 0 auto;
+
+}
+
+.navlist{margin: 0 auto}
+
+
+
+.navlist li {
+
+	list-style-type:none; 
+	text-align: center;
+	display:inline; 
+	padding-right:40px;
+	padding-left: 32px;
+	font-family: 14.5pt;
+
+	
+	
+}
+
+.new-release .row {text-align: center;
+	padding-top: 200px;
+
+
+height:70px;	
+min-width:$my-page-width; 
+	}
+.new-release h1 {text-align: left}
+
+
+.menu {
+	
+	min-width: $my-page-width;
+	
+	height: 500px;
+
+}
+
+.menu li {list-style-type:none;}
+
+.right-menu li{
+	padding-bottom: 15px;
+	
+}
+
+.about {
+	min-width:$my-page-width;
+	height:650px;
+	margin-bottom:50px;
+	margin-top: 50px;
+}
+
+.contact {height: 500px;
+		padding-top:100px;
+		margin-bottom:50px;
+		}
+
+#nicholas {margin: 5px;}
+
+#eatery {margin: 5px;}
+
+#map-link {text-align: center;
+	text-decoration: underline;
+padding: 5px;}
+
+
+
+
