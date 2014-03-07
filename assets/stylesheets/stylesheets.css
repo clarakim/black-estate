@@ -5542,6 +5542,9 @@ li {
   padding-left: 32px;
   font-family: 14.5pt; }
 
+span {
+  font-family: 'Sacramento', cursive; }
+
 .new-release .row {
   text-align: center;
   padding-top: 200px;
@@ -5578,7 +5581,7 @@ li {
 #eatery {
   margin: 5px; }
 
-#map-link {
-  text-align: center;
-  text-decoration: underline;
+.map-box {
+  width: 470px;
+  height: 243px;
   padding: 5px; }
