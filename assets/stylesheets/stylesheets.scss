@@ -1,9 +1,11 @@
 @import "normalize";
 @import "foundation";
+@import "foundation/components/orbit";
 
 $my-backgound-color: #000000;
 $my-color: #FFFFFF;
 $my-second-color: #757575;
+$my-third-color: #f7e9cb; /*brighter than my-second-color*/
 $my-page-width:1200px;
 $my-width:960px;
 
@@ -45,6 +47,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 
+
+
 textarea {height:auto;
 	min-height: 50px;
 	}
@@ -52,43 +56,53 @@ textarea {height:auto;
 
 h1,{
 	color: $my-color;
-	font-family: Maven Pro, sans-serif;
+	font-family: 'Lato', sans-serif;
 	text-decoration: underline;}
 
-h2,h3 {color: $my-second-color;}
+h2,h3 {color: $my-second-color; 
+	font-family: 'Josefin Sans', sans-serif;}
 
-#text-right{color: $my-second-color;
+#text-right{
+
+	color: $my-second-color;
 		text-align: right;}
 
 
+hr{
+	color: $my-second-color;
+	line-height: 1px; 
 
-li {font-family: 'Gafata', sans-serif;}
+}
 
-a:link {color:$my-second-color;}
-a:visited {color:$my-second-color;}
-a:hover {background-color: $my-color;
-		color:$my-backgound-color;}
+
+li {font-family: 'Josefin Sans', sans-serif;}
+
+a:link {color:$my-third-color}
+a:visited {color:$my-third-color;}
+a:hover {
+		color:$my-second-color;}
 
 
 h1
 {
-font-size: 18pt;
+font-size: 20pt;
 }
 
 p{
- font-family:'Maven Pro', sans-serif;
-	color: $my-second-color;}
+ font-family: 'Josefin Sans', sans-serif;;
+	color: $my-second-color;
+ font-size: 18px}
 
 h2
 {
- font-size: 16pt;
+ font-size: 18pt;
  text-decoration: italic;
 }
 
 h3
 {
- font-size: 14pt;
- color: #9B9B8C;
+ font-size: 16pt;
+ color: #f7e9cb;
 }
 
 li{
@@ -96,11 +110,17 @@ li{
 	color: $my-second-color;
 }
 
+.blank {
+	width: 20px;
+	padding-right: 20px;
+}
+
 
 #logo{ 
+	
 	margin-bottom: 0px;
-	background-size: 150%
-
+	padding-left: 20px
+	
 
 }
 
@@ -116,29 +136,35 @@ li{
 }
 
 .heading {
-	height: 213px;
+	height: 130px;
 	padding-top: 50px;
 }
 
 
 
 
-.text-right {color: $my-color;}
+.text-right {color: $my-color;
+font-size: 14px}
 
 
 
 
 .navbar {
 	position: relative;
-	
-	padding: 15px auto;
+	margin-top: 0;
+	padding: 0 auto;
 	width: $my-width;
-	border-style: solid;
-	border-width: 1px;
-	border-color:$my-second-color;
 	margin: 0 auto;
 
 }
+
+
+.navbar hr {
+	color: $my-second-color;
+	position: relative;
+	top: 10px;
+}
+
 
 .navlist{margin: 0 auto}
 
@@ -147,21 +173,25 @@ li{
 .navlist li {
 
 	list-style-type:none; 
-	text-align: center;
+	
 	display:inline; 
-	padding-right:40px;
-	padding-left: 32px;
-	font-family: 14.5pt;}
+	padding-right: 2%;
+	padding-left: 2%;
 
+	font-size: 14pt;}
+ 
 span { 
-	font-family:'Sacramento', cursive;
+	font-family: 'Lato', sans-serif;
 }
 		
 
-.new-release .row {text-align: center;
-	padding-top: 200px;
 
+.slider {
+	margin-top: 80px;
+}
 
+.new-release  {text-align: center;
+	padding-top: 100px;
 height:70px;	
 min-width:$my-page-width; 
 	}
@@ -169,11 +199,10 @@ min-width:$my-page-width;
 
 
 .menu {
-	
+	padding-top: 100px;
 	min-width: $my-page-width;
-	
-	height: 500px;
-
+	height: 850px;
+	margin: auto;
 }
 
 .menu li {list-style-type:none;}
@@ -190,10 +219,15 @@ min-width:$my-page-width;
 	margin-top: 50px;
 }
 
-.contact {height: 500px;
+.contact {height: 600px;
 		padding-top:100px;
 		margin-bottom:50px;
+		text-align: left;
 		}
+
+.contact span {
+	color: $my-third-color;
+}
 
 #nicholas {margin: 5px;}
 
@@ -201,9 +235,11 @@ min-width:$my-page-width;
 
 .map-box {
 	width:470px;
-	height:243px;
-	padding:5px;
+	height:380px;
+	padding:20px;
 }
+
+
 
 
 
